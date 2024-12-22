@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>maximum_No_of_Hours</fullName>
+    <active>true</active>
+    <description>This rule indicates user can put a value maximum upto 24 in No of hours field.</description>
+    <errorConditionFormula>Number_of_Hours__c   &gt;  24</errorConditionFormula>
+    <errorDisplayField>Number_of_Hours__c</errorDisplayField>
+    <errorMessage>No of Hours can never be greater than 24.</errorMessage>
+</ValidationRule>

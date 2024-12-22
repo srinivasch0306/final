@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Working_Day__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( 
+   ISPICKVAL(notice_period_12__c, &quot;&quot;), 
+   TODAY(), 
+   TODAY() + VALUE(TEXT(notice_period_12__c))
+)</formula>
+    <label>Last Working Day</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>

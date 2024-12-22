@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Approval_Message</fullName>
+        <description>Approval Message</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ipbtaru@taruitsolutions.com.deved</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Avocette_Demo</template>
+    </alerts>
+    <alerts>
+        <fullName>Inventory_Approved</fullName>
+        <ccEmails>Adithya.Ponnappa@avocette.com</ccEmails>
+        <description>Inventory Approved</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>adithya@avocette.com.sandbox</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Inventory_Approved_Email_1709805998635</template>
+    </alerts>
+    <alerts>
+        <fullName>Inventory_Rejected</fullName>
+        <ccEmails>Adithya.Ponnappa@avocette.com</ccEmails>
+        <description>Inventory Rejected</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>adithya@avocette.com.sandbox</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Inventory_Rejected_Email_1709806161538</template>
+    </alerts>
+    <alerts>
+        <fullName>Inventory_Request</fullName>
+        <ccEmails>Adithya.Ponnappa@avocette.com</ccEmails>
+        <description>Inventory Request</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>ipbtaru@taruitsolutions.com.deved</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Inventory_Approval_Email_1708673211600</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Update_Approved_Field</fullName>
+        <field>Is_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Approved Field</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Is_Approved</fullName>
+        <field>Is_Approved__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Is Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>Update_Request_Sent</fullName>
+        <field>Request_Sent__c</field>
+        <literalValue>1</literalValue>
+        <name>Update Request Sent</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

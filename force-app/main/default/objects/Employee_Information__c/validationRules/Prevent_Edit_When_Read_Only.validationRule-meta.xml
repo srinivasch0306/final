@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Prevent_Edit_When_Read_Only</fullName>
+    <active>false</active>
+    <errorConditionFormula>Credentials_logged_out__c  = TRUE</errorConditionFormula>
+    <errorMessage>This record is read-only and cannot be edited because the Employee has already left the company.</errorMessage>
+</ValidationRule>
